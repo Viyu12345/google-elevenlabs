@@ -1,0 +1,8 @@
+{
+  "name": "DocuSimple AI",
+  "description": "DocuSimple AI is an Accessibility For All project that converts jargon-filled documents into easy summaries where interaction with an AI voice agent also helps in understanding difficult terms.",
+
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
