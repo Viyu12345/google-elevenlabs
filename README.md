@@ -14,9 +14,19 @@ You would not need the FILEBUILDER.py file as it gives the model id which is use
 - Pip packages: ElevenLabs(not required too)  
 - API keys(required for Gemini)
 
+> **Note:** I have not included the **node_modules** folder as it is to be installed locally through npm install as it contains a lot of modules.
+
 2. Clone the repository:
 
 git clone https://github.com/Viyu12345/google-elevenlabs.git
+
+3. Install dependencies:
+
+Install all the dependencies through **npm install**.
+
+4. Run the Project:
+
+The project will be run by **npm run dev**.
 
 ---
 
