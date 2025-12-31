@@ -20,73 +20,53 @@ git clone https://github.com/Viyu12345/google-elevenlabs.git
 
 ---
 
-## Inspiration
-
-We wanted to make it easier for people to understand complex documents like medical reports, legal texts, and technical manuals. Many people struggle to extract useful information quickly, so we thought: why not create a tool that simplifies documents and answers questions interactively?
-
----
-
 ## What it does
 
-- Upload documents (TXT, PDF, or images) or paste text directly.  
-- Automatically analyzes the document and generates a simplified summary.  
-- Provides key terms and actionable insights from the document.  
-- Lets you ask questions to an AI assistant (powered by ElevenLabs) about the content.  
-- Responds in a friendly and professional manner, explaining complex concepts clearly.  
+DocuSimple AI allows users to upload or paste complex documents, automatically simplifies the content, and provides a conversational interface powered by ElevenLabs AI. Users can ask questions about the document, and the AI explains, clarifies, and guides them in plain language. The platform also highlights key terms, action items, and detailed breakdowns for better comprehension.
 
-> ⚠️ Note: This is just a **prototype**, not yet production-ready.
+> **Note:** This is currently a **prototype**, meant to demonstrate the concept and functionality.
 
 ---
 
 ## How we built it
 
-- **Frontend:** React (TypeScript, Vite) with TailwindCSS for UI.  
-- **Backend:** Flask server that handles document processing and communication with the AI.  
-- **AI:** ElevenLabs Conversational AI for answering user queries.  
-- **Features:** File upload, text parsing, real-time conversation, and structured result display (summary, key terms, action items).
+We built DocuSimple AI using:
+
+* **React & TypeScript** for the frontend, providing a responsive and interactive UI.
+* **Flask (Python)** for the backend, handling document analysis and generating structured responses.
+* **ElevenLabs Conversational AI** for the chat interface, enabling natural, friendly, and professional explanations.
 
 ---
 
 ## Challenges we ran into
 
-- Parsing and extracting text from different document types (images, PDFs, raw text).  
-- Keeping the frontend responsive while processing large documents.  
-- Ensuring the AI stays on-topic and provides contextually accurate explanations.  
-- Coordinating React frontend and Flask backend for smooth real-time interaction.  
-- Handling asynchronous operations like file reading, document analysis, and API calls.  
-- Managing different languages, formatting styles, and special characters.  
-- Designing a UI that clearly displays structured results.  
-- Implementing robust error handling for failed uploads or API timeouts.  
-- Balancing AI verbosity to be helpful but concise.  
-- Limiting server load and processing time for multiple users interacting simultaneously.
+* Ensuring ElevenLabs AI provides accurate, context-aware explanations.
+* Handling different languages, formatting styles, and special characters in documents.
+* Designing a UI that could display structured results (summaries, key terms, action items) clearly and intuitively.
+* Balancing AI verbosity: ensuring answers are detailed enough to be helpful but concise enough to remain readable.
 
 ---
 
 ## Accomplishments that we're proud of
 
-- Successfully integrated ElevenLabs Conversational AI with React and Flask.  
-- Built a flexible document analysis system that handles multiple file types.  
-- Created a clean and intuitive UI for displaying summaries, key terms, and actions.  
-- Implemented real-time feedback and error handling.  
-- Developed a functional prototype that demonstrates the potential of AI-assisted document simplification.
+* Successfully implemented a system where users can interact with their documents.
+* Created a multi-document format parser supporting text, PDF, and image uploads.
+* Developed a professional, user-friendly interface that dynamically renders results, key terms, and action items.
+* Integrated a conversational AI that can explain complex content in a friendly, patient manner.
 
 ---
 
 ## What we learned
 
-- How to handle file uploads and text parsing in a React + Flask stack.  
-- Techniques for asynchronous communication between frontend and backend.  
-- Best practices for integrating third-party AI APIs securely using environment variables.  
-- How to design an intuitive UI that simplifies complex data.  
-- Importance of error handling, edge cases, and user experience in AI-powered apps.
+* Techniques for processing different file types on the web.
+* Best practices for using conversational AI to assist with real-time user queries.
+* The importance of designing interfaces that clearly communicate AI outputs to users.
 
 ---
 
 ## What's next for DocuSimple AI
 
-- Expand support for more document formats and languages.  
-- Improve AI accuracy and contextual understanding.  
-- Add user authentication and personal document storage.  
-- Make it production-ready with deployment on cloud platforms.  
-- Enhance the UI/UX for better accessibility and responsiveness.  
-- Explore advanced features like voice interaction and multi-turn conversations.
+* Expand document type support to include spreadsheets, presentations, and scanned handwritten notes.
+* Add **user accounts** to save past analyses and chat histories.
+* Improve AI’s ability to answer follow-up questions and provide references from the document.
+* Optimize performance for large-scale document processing with caching and incremental parsing.
