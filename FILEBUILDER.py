@@ -6,7 +6,7 @@ from elevenlabs.client import ElevenLabs
 
 
 elevenlabs = ElevenLabs(
-    api_key="sk_a48f013f3f5dbfed345aafd42569692b0899c7cdbc1d9a21"
+    api_key="YOUR_API_KEY"
 )
 
 prompt = f"""
