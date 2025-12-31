@@ -38,9 +38,6 @@ const Header: React.FC<HeaderProps> = ({ currentView, setView }) => {
             >
               Simplify Document
             </button>
-            <button className="px-4 py-2 text-sm font-semibold text-white bg-indigo-600 rounded-full hover:bg-indigo-700 transition-all shadow-md shadow-indigo-100">
-              Get Started
-            </button>
           </div>
 
           <div className="md:hidden flex items-center">
